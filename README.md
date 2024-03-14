@@ -24,6 +24,7 @@ Scenario 2: The user can expand an event to see its details
 Given the user gets a list of events, when a user selects an event's details, then the details will show up for that chosen event.
 Scenario 3: User can collapse an event to hide its details
 Given the user sees the details of an event, when the user presses a button to hide the event's details, then the details of that event will be hidden.
+
 FEATURE 3: SPECIFY NUMBER OF EVENTS
 
 As a user, I should be able to specify the number of displayed events, after I have selected the number of displayed events.
@@ -32,6 +33,7 @@ Scenario 1: When the user hasn't specified a number, 32 is the default number.
 Given the user hasn't specified or filtered the number of events, when the user sees the list of events then the default number of displayed events will be 32.
 Scenario 2: Users can change the number of events they want to see.
 Given the user has events displayed, when the user chooses to change the number of events displayed, then the number of events displayed will update to the number the user selected.
+
 FEATURE 4: USE THE APP WHEN OFFLINE
 
 As a user, I should be able to get events information when offline, that was fetched while having an internet connection.
@@ -40,12 +42,14 @@ Scenario 1: Show cached data when there's no internet connection.
 Given the user has no internet connection, when the user is accessing the app, then cached data, stored inside the app, will be provided to the user.
 Scenario 2: Show an error when the user changes the settings (city, time range).
 Given the user has no internet connection, when the user is trying to access new event information (change the city, etc.), then the app will show an error.
+
 FEATURE 5: ADD AN APP SHORTCUT TO THE HOME SCREEN
 
 As a user, I should be able to add a shortcut of the app to the home screen, so I can access the app quicker.
 
 Scenario 1: The user can install the Meet App as a shortcut on their device's home screen.
 Given the user wants to install the app, when the user selects to install the app as a shortcut, then a shortcut is created on the user's home screen.
+
 FEATURE 6: DISPLAY CHARTS VISUALIZING EVENT DETAILS
 
 As a user, I would like to be able to see a chart showing the upcoming events in each city so that I know what events are organized in which city.
