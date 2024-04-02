@@ -2,6 +2,7 @@
 
 import { render } from '@testing-library/react';
 import EventList from '../components/EventList.js';
+import { getEvents } from '../api';
 
 describe('<EventList /> component', () => {
   test('renders correct number of events', () => {
