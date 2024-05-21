@@ -1,8 +1,8 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:500);
-
+/*@import url(https://fonts.googleapis.com/css?family=Roboto:500);*/
 .App {
   text-align: center;
   padding: 2% 5%;
+  background-color:   #e6e0f8;
 }
 
 .App * {
@@ -32,14 +32,21 @@ input[type="number"] {
 }
 
 .city {
-  width: 250px;
+  width: 45%;
+  margin-left: auto;
+  padding: 10px;
+  border: 1px solid #fbf9fc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  background-color: #e6e0f8;
 }
 
 #city-search {
-  display: flex;
+  display: center;
   flex-direction: column;
-  margin: auto;
   position: relative;
+  margin: auto;
 }
 
 .suggestions {
@@ -53,27 +60,27 @@ input[type="number"] {
   box-shadow: 10px 10px 16px -12px rgba(0, 0, 0, 0.75);
 }
 
-.suggestions>li {
+.suggestions > li {
   text-align: left;
   padding: 8px 6px 8px 10px;
-  background-color: #eee;
+  background-color: #dbade2;
   cursor: default;
 }
 
-.suggestions>li:last-child {
+.suggestions > li:last-child {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
 
-.suggestions>li:hover {
-  background-color: #bcdcdb;
+.suggestions > li:hover {
+  background-color: rgb(127, 56, 185);
 }
 
 .event {
   padding: 10px 10px 35px;
   margin-bottom: 10px;
   text-align: left;
-  border: 1px solid #ccc;
+  border: 2px solid #590666;
   border-radius: 4px;
   position: relative;
 }
@@ -86,12 +93,29 @@ input[type="number"] {
   border-radius: 4px;
   outline: none;
   cursor: pointer;
+  transition-duration: 0.4s;
 }
 
+.details-btn:hover {
+  background-color: rgb(77, 79, 155);
+}
 .alerts-container {
   position: fixed;
   top: 0px;
   left: 20px;
   width: 250px;
   z-index: 1000;
+}
+
+.charts-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 20px; 
+  padding-top: 20px;
+}
+
+@media (max-width: 768px){
+  .charts-container{
+    grid-template-columns: 1fr;
+  }
 }

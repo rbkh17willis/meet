@@ -1,10 +1,12 @@
-import CitySearch from './components/CitySearch';
+/*import CitySearch from './components/CitySearch';
 import EventList from './components/EventList';
 import NumberOfEvents from './components/NumberOfEvents';
 import './App.css';
 import { useEffect, useState } from 'react';
 import { getEvents, extractLocations } from './api';
 import { ErrorAlert, InfoAlert, WarningAlert } from './components/Alert';
+import CityEventsChart from './components/CityEventsChart';
+import EventGenresChart from './components/EventGenresChart';
 
 const App = () => {
   const [events, setEvents] = useState([]);
@@ -42,9 +44,13 @@ const App = () => {
       </div>
       <CitySearch  allLocations={allLocations} setCurrentCity={setCurrentCity} setInfoAlert={setInfoAlert}/>
       <NumberOfEvents setCurrentNOE={setCurrentNOE} setErrorAlert={setErrorAlert} />
+      <div className='charts-container'>
+        < EventGenresChart events={events} />
+        < CityEventsChart allLocations={allLocations} events={events} />
+      </div>
       <EventList events={events}  />
     </div>
   );
  }
  
- export default App;
+ export default App;*/
